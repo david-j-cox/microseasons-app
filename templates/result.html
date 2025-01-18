@@ -33,6 +33,21 @@
             border-radius: 10px;
             font-size: 1.5em;
         }
+        .download-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(76, 175, 80, 0.4);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: rgba(109, 142, 195, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -46,6 +61,7 @@
             <p>Average Precipitation: {{ avg_precipitation }} inches</p>
             <p>Average Wind Speed: {{ avg_wind_speed }} mph</p>
             <p>Average Wind Direction: {{ avg_wind_direction }}</p>
+            <a href="{{ image_url }}" download class="download-button">Download Image</a>
         </div>
     </div>
 </body>
