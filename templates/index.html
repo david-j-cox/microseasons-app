@@ -15,6 +15,15 @@
             margin: 0;
             background-color: #f0f0f0;
             text-align: center;
+            background-image: url('../images/landing_page.jpg');
+            background-size: auto 100%;
+            background-position: center;
+        }
+        h2 {
+            margin: 5px 0; /* Adjusts space between paragraphs */
+        }
+        h3 {
+            margin-top: 40px; /* Adds space before the h3 element */
         }
         .spinner-container {
             display: flex;
@@ -40,11 +49,20 @@
             font-size: 1.2em;
             margin-bottom: 10px;
         }
+        #content {
+            background-color: rgba(255, 255, 255, 0.6); /* White with 40% opacity */
+            padding: 20px; /* Add some padding for better spacing */
+            border-radius: 10px; /* Add rounded corners */
+        }
     </style>
 </head>
 <body>
     <div id="content">
-        <h1>Enter Your ZIP Code</h1>
+        <h1>Microseasons App</h1>
+        <h2>This app is inspired by Japan's 72 smaller periods that divide the year.</h2>
+        <h2></h2>
+        <h2></h2>
+        <h3>Enter your Zip Code to see the microseasons for your area.</h3>
         <form id="zipForm" method="post">
             <input type="text" name="zip_code" placeholder="ZIP Code" required>
             <button type="submit">Submit</button>

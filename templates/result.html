@@ -33,7 +33,7 @@
             border-radius: 10px;
             font-size: 1.5em;
         }
-        .download-button {
+        .download-button, .home-button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
@@ -45,7 +45,7 @@
             transition: background-color 0.3s;
         }
 
-        .download-button:hover {
+        .download-button:hover, .home-button:hover {
             background-color: rgba(109, 142, 195, 0.4);
         }
     </style>
@@ -62,6 +62,7 @@
             <p>Average Wind Speed: {{ avg_wind_speed }} mph</p>
             <p>Average Wind Direction: {{ avg_wind_direction }}</p>
             <a href="{{ image_url }}" download class="download-button">Download Image</a>
+            <a href="https://microseasons-app-d4bnb5ezdggzescr.eastus2-01.azurewebsites.net/" class="home-button">Return to Homepage</a>
         </div>
     </div>
 </body>
